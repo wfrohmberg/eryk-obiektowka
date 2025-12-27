@@ -6,3 +6,11 @@ void SortingAlgorithm::setProblemInstance(ProblemInstance const* instance) {
         this->sortingProblemInstance = sortingProblemInstance->clone();
     }
 }
+
+SortingProblemInstance const* SortingAlgorithm::getResult() const {
+    return this->sortingProblemInstance;
+}
+
+bool SortingAlgorithm::canHandle(ProblemInstance const* instance) const {
+    return dynamic_cast<SortingProblemInstance const*>(instance) != nullptr;
+}

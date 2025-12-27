@@ -1,8 +1,9 @@
 #pragma once
 
+#include <algorithm_result.h>
 #include <problem_instance.h>
 
-class SortingProblemInstance: public ProblemInstance {
+class SortingProblemInstance: public ProblemInstance, public AlgorithmResult {
 public:
     virtual bool isGreater(int index1, int index2) const = 0;
     virtual void swap(int index1, int index2) = 0;

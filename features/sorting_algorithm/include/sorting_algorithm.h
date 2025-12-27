@@ -7,5 +7,7 @@ class SortingAlgorithm: public Algorithm {
 protected:
     SortingProblemInstance* sortingProblemInstance;
 public: 
+    virtual bool canHandle(ProblemInstance const* instance) const override;
     virtual void setProblemInstance(ProblemInstance const* instance) override;
+    virtual SortingProblemInstance const* getResult() const override;
 };
