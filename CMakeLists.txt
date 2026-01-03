@@ -6,6 +6,8 @@ add_executable(ErykObiektowka
     features/algorithm/src/algorithm.cc
     features/sorting_algorithm/src/sorting_algorithm.cc
     features/selection_sort/src/selection_sort.cc
+    features/car/src/car_catalog.cc
+    features/car/src/car.cc
 )
 
 target_include_directories(ErykObiektowka 
@@ -14,4 +16,5 @@ target_include_directories(ErykObiektowka
     features/algorithm/include 
     features/sorting_algorithm/include
     features/selection_sort/include
+    features/car/include
 )
